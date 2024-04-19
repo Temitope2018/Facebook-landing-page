@@ -1,105 +1,153 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:  sans-serif;
 }
-
-body {
-    /* margin: 8em auto; */
-    /* background-color: blueviolet; */
+body{
+    background-color:rgba(70, 131, 180, 0.24);
+    font-size: 1rem;
+    width: 100%;
 }
-img {
-    margin: 0;
-    max-width: 300px;
-    
+.project{
+    width: 100%;
 }
-.welcome-note-text{
-    font-size: 1.7rem;
-    padding: 0 0 0 1.6rem;
-}
-.first-block {
-    margin: 0 auto;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6em;
-    background-color: rgb(236, 239, 241);
-}
-input,
-.log-button{
-    /* padding: 1rem; */
-    font-size: 1.1rem;
-    min-width: 350px;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    border-radius: 0.5rem;
-    border: 1px solid rgb(221, 218, 218);
-
-    
-}
-.input-login{
-    padding: 0.rem;
-    /* box-shadow: 0.1px 1px 5px 0.5px; */
-    border-radius: 0.5rem;
-    text-align: center;
-    background-color: white;
-    /* border: 2px solid rgb(236, 234, 234); */
-    box-shadow: 1px 1px 5px 0.5px;
-}
-.log-button{
-    background-color: rgb(9, 127, 237);
-    color: white;
-    font-size: larger;
+.facebook-text{
+    margin: .2em 0 0 .3em;
+    font-size: 3rem;
     font-weight: bold;
+    color: blue;
+}
+@media (min-width:600px){
+    .facebook-text{
+        font-size: 4rem;
+    }
+}
+.text2{
+    font-size: 1.1rem;
+    margin: 1em 0 0 .2em;
+    color: rgba(0, 0, 0, 0.658);
+    font-weight: 500;
+    }
+    @media (min-width:600px){
+        .text2{
+            margin-left: 3em;
+        }
+    }
+.section1{
+    margin: auto;
+    width: 94%;
+    max-width: 500px;
+    background-color: white;
+    border: thin solid white;
+    margin-top: 3em;
+    border-radius: 10px;
+     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    padding-top: 1.2em;
+}
+.sectionA{
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    margin: auto;
+}
+.text-email{
+   border: thin solid rgba(0, 0, 0, 0.527) ;
+   outline: none;
+   font-size: 1.1rem;
+   box-shadow: opx 2px 5px rgba(0, 10, 10, 20); 
+   padding: .5em 0 .5em .5em;
+   border-radius: 3px;
+   cursor: pointer;
+}
+.text-password{
+   border: thin solid rgba(0, 0, 0, 0.527) ;
+   outline: none;
+   font-size: 1.1rem;
+   box-shadow: opx 2px 5px rgba(0, 10, 10, 20); 
+   padding: .5em 0 .5em .5em;
+   border-radius: 3px;
+   margin-top: 1.5em; 
+   cursor: pointer; 
+}
+.btn-log{
+  font-size: 1.1rem;
+  display: block;
+  margin: auto;
+  margin-top: 1em;
+  color: white;
+  background-color: blue;
+  border: none;
+  width: 97%;
+  padding: .5em 0;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 5);
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn-log:hover{
+    color: blue;
+    background-color: white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 5);
+    transition-duration: 2s;
+    }
+.forgot-text{
+    text-align: center;
+    margin: 1.2em 0 0 .6em;
+    font-size: 1.03rem;
+    color: rgba(0, 0, 255, 0.582);
+    border-bottom-style:solid;
+    border-bottom-color: rgba(0, 0, 0, 0.486);
+    border-bottom-width: thin;
+    padding-bottom: 1.2em;
+    width: 94%;
+    cursor: pointer;
+    }
+.new-account{
+    font-size: 1rem;
+    display: block;
+    margin: auto;    
+    margin-top: 2em ;
+    background-color: rgba(5, 82, 5, 0.849);
+    color: white;
+    border: none;
+    padding: .8em 3em;
+    border-radius: 7px;
+    font-weight: 500;
+    margin-bottom: 2em;
     cursor: pointer;
 }
-a:any-link{
-    text-decoration-line: none;
-    margin-bottom: 1rem;
-    color: rgb(7, 106, 199) ;
-    
-    
+.new-account:hover{
+   background-color: white;
+   color: rgba(4, 73, 4, 0.932);
+   transition-duration: 2s;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 5);
 }
-hr {
-    margin: 1.2rem;
-    min-width: 350px;
-}
-.create-button{
-    min-width: 200px;
-    padding: 0.8rem;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    border: none ;
-    background-color: rgb(41, 170, 8);
-    margin-bottom: 1.2rem;
-
-}
-strong{
+.text-page{
+    margin-top: 1.2em;
+    font-size: 1.1rem;
     color: black;
-}
-.create-page-text{
-    margin-top: 1.2rem;
+    font-weight: bold;
     text-align: center;
-    font-size: 0.9rem;
-
+    cursor: pointer;
 }
-article{
-    padding: 2rem;
-    margin: 0 20em 2em 20em;
-    color: rgb(181, 180, 180);
-    font-size: 0.8rem;
+span{
+    color: rgba(0, 0, 0, 0.692);
+    margin-left: .3em;
+    font-size: 1.025rem;
 }
-
-@media screen and (max-width:900px) {
-   .first-block{
-    display: flex;
-    flex-direction:column;
-   } 
-  
+.last-text{
+    width: 50%;
+    margin-top: 2em;
+    color: rgba(0, 0, 0, 0.74);
+    margin-bottom: .5em;
+}
+.bottom-text{
+    width: 90%;
+    margin-top: 1em;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: .9rem;
+}
+.text7{
+    margin-top: .5em;
+    color: rgba(0, 0, 0, 0.712);
 }
